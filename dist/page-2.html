@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Web OAuth</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <header class="border-bottom"><img class="img-fluid d-block mx-auto w-50 py-1" src="images/logoTruemoney.png" alt=""/></header>
+    <section class="auth">
+      <div class="container">
+        <h1 class="auth__title">เชื่อมบัญชีทรูมันนี่ วอลเล็ท</h1>
+        <h3 class="auth__subtitle">กรุณากรอกข้อมูลสำหรับเชื่อมบัญชี</h3>
+      </div>
+    </section>
+    <form class="form needs-validation" action="signing.html" method="" novalidate="novalidate">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <label class="form__label" for="validate-tel">เบอร์โทรศัพท์</label>
+            <input class="form-control" id="validate-tel" type="tel" value="" onkeypress="return isNumberKey(event)" placeholder="099-999-9999" pattern=".{12}" required="required"/>
+            <div class="valid-feedback"> </div>
+            <div class="invalid-feedback">กรุณากรอกเบอร์โทรศัพท์ 10 หลัก
+              <div class="invalid-feedback__desc"></div>
+            </div>
+          </div>
+          <div class="col-12 form-row">
+            <label class="form__label" for="validate-id">เลขบัตรประชาชน</label>
+            <input class="form-control" id="validate-id" type="tel" value="" onkeypress="return isNumberKey(event)" placeholder="9-999-9999-9999-9" pattern=".{17}" required="required"/>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">กรุณากรอกเลขบัตรประชาชน 13 หลัก
+              <div class="invalid-feedback__desc"></div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn next btn-secondary" id="check-invalid" type="submit" disabled="disabled">ถัดไป</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <script src="main.js"></script>
+    <script>
+      var formatPhone = new Cleave('#validate-tel', {
+        delimiter: '-', 
+        blocks: [3, 3, 4]
+      });
+      var formatID = new Cleave('#validate-id', {
+        delimiter: '-',
+        blocks: [1, 3, 4, 4, 1]
+      });
+    </script>
+  </body>
+</html>

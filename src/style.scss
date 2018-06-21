@@ -1,0 +1,337 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min';
+
+:root {
+  padding: constant(safe-area-inset-top) constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left);
+}
+body{
+  font-family: -apple-system, BlinkMacSystemFont, //Safari Mac/iOS, Chrome
+  'Segoe UI',Roboto,Oxygen, //Window, Android, KDE
+  Ubuntu,Cantarell,'Fira Sans', //Ubuntu, Gnome, Firefox OS
+  'Open Sans','Droid Sans','Helvetica Neue',sans-serif; //Old
+  font-size: 16px;
+  .btn-secondary{
+    background-color: #e6e6e6 !important;
+    border: 0 !important;
+  }
+}
+
+.login{
+  &__connectShopee-text{
+    font-size: 0.75rem;
+    color:#4a4a4a;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  &__btn{
+    &--truemoney {
+      background-color: #ff8300;
+      color: #fff;
+      font-size: 0.875rem;
+      height: 48px;
+      width: 100%;
+      margin-top: 2rem;
+    }
+
+    &--website {
+      background-color: #fff;
+      color: #ff8300;
+      font-size: 0.875rem;
+      height: 48px;
+      width: 100%;
+      margin-top: 2rem;
+      border-color: #ff8300;
+    }
+  }
+  &__seperator{
+    position: relative;
+    color:#4a4a4a;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    font-size: 0.75rem;
+    &::before {
+      content: '';
+      position: absolute;
+      border-top: #dddddd solid 1px;
+      width: 45%;
+      top: 9px;
+      left: 0;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      border-top: #dddddd solid 1px;
+      width: 45%;
+      top: 9px;
+      right: 0;
+    }
+  }
+  &__link-register{
+    color:#147bd1;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 0.75rem;
+  }
+}
+
+.auth{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  &__title{
+    font-size: 1.5rem;
+    color: #333333;
+  }
+  &__subtitle{
+    font-size: 0.875rem;
+    color: #333333;
+  }
+}
+
+/* From 7App*/
+
+.comfirm-otp{
+  &__desc{
+    color:#808080;
+    font-size: 0.875rem;
+  }
+  &__num{
+    color:#404040;
+    font-size: 1.125rem;
+  }
+  @media(max-width: 320px){
+    &__desc {
+      font-size: 0.775rem;
+    }
+    &__num {
+      font-size: 0.85rem;
+    }
+  }
+}
+.otp {
+  margin-top:3rem;
+  input[type=tel] {
+  height: 50px;
+  width: 40px;
+  text-align: center;
+  font-size: 18px;
+  border: 0;
+  border-bottom: 2px solid #ddd;
+  color:#333;
+  font-weight: bold;
+  } 
+  &__ref{
+    color:#bababa;
+    font-size: 0.875rem;
+    text-align: center;
+    padding-top: 14px;
+  }
+  &__reset{
+    color:#147bd1;
+    font-size: 0.875rem;
+    text-align: center;
+    margin-top: 3rem;
+    background-color: transparent;
+    border:0;
+  }
+}
+
+.form{
+  &-row{
+    margin-top: 34px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+   padding-top:2rem;
+  .form-control{
+    &::placeholder{
+      font-size: 0.875rem;
+      color:#999; 
+    }
+    &:focus{
+      border:0;
+    }
+    &:valid{
+      border:0;
+    }
+  }
+  &__label{
+    font-size: 0.875rem;
+    color:#999;
+  }
+  .valid-feedback {
+    display: none;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top:50%;
+    right: 1rem;
+    background: url('./icSuccess.png') no-repeat;
+  }
+  .invalid-feedback {
+    &__desc{
+      display: block;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top:40%;
+      right: 1rem;
+      background: url('./icFailed.png') no-repeat;
+    }
+  }
+}
+
+.signature--detail{
+  font-size: 1rem;
+  font-weight: 700;
+  color:#333333;
+}
+.clear-sign{
+  padding-top: 26px;
+  color:#ff8f00;
+}
+.term-sign{
+  font-size: 14px;
+  color:#9b9b9b;
+}
+.connect{
+  &__text{
+    text-align: center;
+    font-size: 1.125rem;
+    color:#4a4a4a;
+  }
+  &__term{
+    font-size: 0.875rem;
+    color:#808080; 
+  }
+}
+
+.form-accept{
+  bottom: 18%;
+  width: 100%;
+  display: block;
+  text-align: center;
+  @media(max-height:736px){
+    position: relative;
+    bottom: unset;
+  }
+  .form-group{
+    padding-left: 0;
+  }  
+}
+.checkbox{
+  width: 25px;
+  margin: 20px 100px;
+  position: relative;
+  label{
+    cursor: pointer;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    background: #eee;
+    border:1px solid #ddd;
+  }
+}
+
+.modal-header{
+  color:#333;
+  border: 0;
+  .modal-title{
+    font-size: 1.125rem;
+    margin-top: 2rem;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.modal-footer{
+  border: 0; 
+}
+
+.next{
+  margin-top: 34px;
+  width: 100%;
+  background-color: #ff8300;
+  color:#fff;
+  height: 48px;
+}
+
+.cancle{
+  &--btn {
+    position: fixed;
+    color: #fff;
+    width: 90%;
+    margin: 1rem 0;
+    bottom: 0;
+    left: 50%;
+    height:45px;
+    transform: translateX(-50%);
+    color:#999;
+    background-color: transparent;
+    @media(max-height: 666px) {
+      position: relative;
+      transform: none;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 1.5rem 0;
+    }
+  }
+}
+
+.styled-checkbox {
+  position: absolute; // take it out of document flow
+  opacity: 0; // hide it
+  &+label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+  } // Box.
+  &+label:before {
+    content: '';
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #808080;
+    background: #fff;
+    border-radius: 2px;
+  } // Box hover
+  &:hover+label:before {
+    // background: #147bd1;
+  } // Box focus
+  &:focus+label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  } // Box checked
+  &:checked+label:before {
+    background: #147bd1;
+    border: 0;
+  } // Disabled state label.
+  &:disabled+label {
+    color: #b8b8b8;
+    cursor: auto;
+  } // Disabled box.
+  &:disabled+label:before {
+    box-shadow: none;
+    background: #ddd;
+  } // Checkmark. Could be replaced with an image
+  &:checked+label:after {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 9px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+    @media(min-width:321px){
+      left: 6px;
+    }
+  }
+}
