@@ -1,0 +1,30 @@
+extends _template
+block body
+  header.border-bottom
+    img(src="images/logoTruemoney.png", alt="").img-fluid.d-block.mx-auto.w-50.py-1
+  section
+    .container
+      p.consent__header.py-4 อนุญาตให้เข้าถึงข้อมูลเพื่อเชื่อมบัญชี ดังนี้  
+      .row
+        .col-12.py-3.border-consent
+          .consent__title ชื่อ-นามสกุล
+          .consent__input สมหญิง ใจดี
+        .col-12.py-3.border-consent
+          .consent__title เบอร์โทรศัพท์
+          .consent__input 099-999-9999
+        .col-12.d-flex.justify-content-between.align-items-center.py-3.border-consent.consent-container
+          label.consent__label อีเมล
+          input(type="checkbox" checked="checked")
+          .checkmark
+        .col-12.d-flex.justify-content-between.align-items-center.py-3.border-consent.consent-container
+          label.consent__label หักเงินในบัญชีทรูมันนี่ วอลเล็ท
+          input(type="checkbox")
+          .checkmark
+        .col-12.d-flex.justify-content-between.align-items-center.py-3.border-consent.consent-container
+          label.consent__label เติมเงินด้วยบาร์โค้ด
+          input(type="checkbox")
+          .checkmark
+        .col-12.d-flex.justify-content-between.align-items-center.py-3.border-consent.consent-container
+          label.consent__label ชำระเงินด้วยบาร์โค้ด
+          input(type="checkbox")
+          .checkmark
