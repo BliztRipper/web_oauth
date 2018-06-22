@@ -1,0 +1,20 @@
+extends _template
+block body
+  header.border-bottom
+    img(src="images/logoTruemoney.png", alt="").img-fluid.d-block.mx-auto.w-50.py-1
+  .comfirm-otp.d-flex.justify-content-around.align-items-center.py-4.border
+    .comfirm-otp__desc รหัสยืนยันจะถูกส่ง SMS ไปที่เบอร์
+    .comfirm-otp__num 099-999-9999
+  .container(style='width: 280px;')  
+    form.needs-validation(action='connect.html' method='' novalidate)
+      .otp.d-flex.justify-content-center.justify-content-around(action="")
+        input(type='tel' maxlenght='1' autofocus required)
+        input(type='tel' maxlenght='1' required)
+        input(type='tel' maxlenght='1' required)
+        input(type='tel' maxlenght='1' required)
+        input(type='tel' maxlenght='1' required)
+        input(type='tel' maxlenght='1' required)
+      .otp__ref Ref รหัสยืนยัน: HUTV 
+      button.otp__reset.mx-auto.d-block(type='reset') ขอรหัสยืนยันอีกครั้ง
+      .col-12
+          button.btn.next.btn-secondary#check-invalid(type='submit' disabled) ถัดไป  
