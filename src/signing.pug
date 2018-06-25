@@ -1,0 +1,16 @@
+extends _template
+block body
+  header.border-bottom
+    img(src="images/logoTruemoney.png", alt="").img-fluid.d-block.mx-auto.w-50.py-1
+  section
+    .container
+      h2.singing__title.my-4 กรุณาเซ็นชื่อของคุณ
+      .js-signature(data-border="1px solid #979797" data-line-color="#ff8300" data-height="280" data-auto-fit="true")
+      .signature-action
+        .sprite--signature
+        .clear-sign(onclick="clearCanvas();") เซ็นใหม่  
+    .container
+      .term-sign.pt-5 รองรับตั้งแต่ Android 4.0 หรือ iOS 7.0 ขึ้นไป และแนะนำให้ใช้ Google Chrome เพื่อการแสดงผลที่สมบูรณ์      
+      .col-12.px-0
+        a(href='success.html')
+          button.btn.next.mb-4.btn-secondary.sign-btn(type='submit' onclick="saveCanvas();" disabled) ยืนยัน 

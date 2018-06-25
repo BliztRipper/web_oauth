@@ -26,23 +26,7 @@
   }, false); 
 })();
 
-$('#styled-checkbox-2').click(function(){ 
-  var $list = $('.next--btn');
-  var btnClass = $('#check-invalid')
-  if ($list.attr('disabled')) {
-    $list.removeAttr('disabled');
-    btnClass.removeClass("btn-secondary");
-  } else { 
-    $list.attr('disabled', 'disabled');
-    btnClass.addClass("btn-secondary");
-  }
-})
-
 $(document).ready(function (){
-  // $('.otp__reset').click(function(){
-  //   $('#check-invalid').attr('disabled', 'disabled');
-  //   $('#check-invalid').addClass('btn-secondary');
-  // })
   var dateobj = new Date();
   var bcyear = dateobj.getFullYear() + 543;
   function pad(n) {return n < 10 ? "0"+n : n;}
@@ -53,14 +37,14 @@ $(document).ready(function (){
 /* Signature Section */
 $('.js-signature').jqSignature();
 $('.js-signature').on('jq.signature.changed', function () {
-  $('.next--btn').attr('disabled', false);
-  $('.next--btn').removeClass('btn-secondary');
+  $('.sign-btn').attr('disabled', false);
+  $('.sign-btn').removeClass('btn-secondary');
 });
 
 function clearCanvas() {
   $('.js-signature').jqSignature('clearCanvas');
-  $('.next--btn').attr('disabled', true);
-  $('.next--btn').addClass('btn-secondary');
+  $('.sign-btn').attr('disabled', true);
+  $('.sign-btn').addClass('btn-secondary');
 }
 function saveCanvas() {
   var signature = $('.js-signature').jqSignature('getDataURL');

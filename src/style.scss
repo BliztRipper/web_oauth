@@ -189,6 +189,7 @@ body{
 .clear-sign{
   padding-top: 26px;
   color:#ff8f00;
+  text-align: center;
 }
 .term-sign{
   font-size: 14px;
@@ -280,8 +281,39 @@ body{
   }
 }
 
+.kyc{
+  &__title{
+    color:#333333;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  &__subtitle{
+    color:#333333;
+    font-size: 0.875rem;
+  }
+}
 
+.singing{
+  &__title{
+    font-size: 1.125rem;
+    color:#333333;
+    text-align: center;
+  }
+}
 
+.success{
+  height: 80vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  &__title{
+    font-size: 1.5rem;
+    color:#333;
+  }
+  &__text{
+    color:#999;
+  }
+}
 
 .form-accept{
   bottom: 18%;
@@ -326,59 +358,6 @@ body{
       justify-content: center;
       width: 100%;
       margin: 1.5rem 0;
-    }
-  }
-}
-
-.styled-checkbox {
-  position: absolute; // take it out of document flow
-  opacity: 0; // hide it
-  &+label {
-    position: relative;
-    cursor: pointer;
-    padding: 0;
-  } // Box.
-  &+label:before {
-    content: '';
-    margin-right: 10px;
-    display: inline-block;
-    vertical-align: text-bottom;
-    width: 20px;
-    height: 20px;
-    border: 1px solid #808080;
-    background: #fff;
-    border-radius: 2px;
-  } // Box hover
-  &:hover+label:before {
-    // background: #147bd1;
-  } // Box focus
-  &:focus+label:before {
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
-  } // Box checked
-  &:checked+label:before {
-    background: #147bd1;
-    border: 0;
-  } // Disabled state label.
-  &:disabled+label {
-    color: #b8b8b8;
-    cursor: auto;
-  } // Disabled box.
-  &:disabled+label:before {
-    box-shadow: none;
-    background: #ddd;
-  } // Checkmark. Could be replaced with an image
-  &:checked+label:after {
-    content: '';
-    position: absolute;
-    left: 10px;
-    top: 9px;
-    background: white;
-    width: 2px;
-    height: 2px;
-    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
-    transform: rotate(45deg);
-    @media(min-width:321px){
-      left: 6px;
     }
   }
 }

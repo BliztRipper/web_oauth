@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Web OAuth</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <header class="border-bottom"><img class="img-fluid d-block mx-auto w-50 py-1" src="images/logoTruemoney.png" alt=""/></header>
+    <section>
+      <div class="container">
+        <h2 class="singing__title my-4">กรุณาเซ็นชื่อของคุณ</h2>
+        <div class="js-signature" data-border="1px solid #979797" data-line-color="#ff8300" data-height="280" data-auto-fit="true"></div>
+        <div class="signature-action">
+          <div class="sprite--signature"></div>
+          <div class="clear-sign" onclick="clearCanvas();">เซ็นใหม่  </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="term-sign pt-5">รองรับตั้งแต่ Android 4.0 หรือ iOS 7.0 ขึ้นไป และแนะนำให้ใช้ Google Chrome เพื่อการแสดงผลที่สมบูรณ์      </div>
+        <div class="col-12 px-0"><a href="success.html">
+            <button class="btn next mb-4 btn-secondary sign-btn" type="submit" onclick="saveCanvas();" disabled="disabled">ยืนยัน </button></a></div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+    <script></script>
+  </body>
+</html>

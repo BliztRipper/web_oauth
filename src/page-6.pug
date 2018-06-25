@@ -1,0 +1,70 @@
+extends _template
+block body
+  -var page = 'kyc'
+  header.border-bottom
+    img(src="images/logoTruemoney.png", alt="").img-fluid.d-block.mx-auto.w-50.py-1
+  section
+    .container.pt-4
+      h1.kyc__title กรุณากรอกข้อมูลส่วนตัว
+      h4.kyc__subtitle เพื่อเชื่อมบัญชีทรูมันนี่ วอลเล็ท
+      form.needs-validation(action='signing.html' method='' novalidate)
+        .col-12.form-row.px-0
+          label.form__label(for='validate-name') ชื่อ (ภาษาไทย)
+          input.form-control#validate-name(type='text' placeholder='กิตติ' required)
+          .valid-feedback 
+          .invalid-feedback กรุณากรอกชื่อภาษาไทย
+            .invalid-feedback__desc
+        .col-12.form-row.px-0
+          label.form__label(for='validate-surname') นามสกุล (ภาษาไทย)
+          input.form-control#validate-surname(type='text' placeholder='สิงหาคม' required)
+          .valid-feedback 
+          .invalid-feedback กรุณากรอกนามสกุลภาษาไทย
+            .invalid-feedback__desc
+        .col-12.form-row.px-0
+          label.form__label(for='validate-name-eng') ชื่อ (ภาษาอังกฤษ)
+          input.form-control#validate-name-eng(type='text' placeholder='Kitti' required)
+          .valid-feedback 
+          .invalid-feedback กรุณากรอกชื่อภาษาอังกฤษ
+            .invalid-feedback__desc
+        .col-12.form-row.px-0
+          label.form__label(for='validate-surname-eng') นามสกุล (ภาษาอังกฤษ)
+          input.form-control#validate-surname-eng(type='text' placeholder='Singhakom' required)
+          .valid-feedback 
+          .invalid-feedback กรุณากรอกนามสกุลภาษาอังกฤษ
+            .invalid-feedback__desc
+        .col-12.form-row.px-0
+          label.form__label(for='validate-dob') วัน / เดือน / พ.ศ.
+          input.form-control#validate-dob(type='tel' placeholder='' required)
+          .valid-feedback 
+          .invalid-feedback กรุณากรอกวันเดือนปีเกิด
+            .invalid-feedback__desc
+        .col-12.form-row.px-0
+          label.form__label(for='validate-home-address') ที่อยู่ตามทะเบียนบ้าน
+          input.form-control#validate-home-address(type='text' placeholder='123 ถ.รัชดาภิเษก ดินแดง กรุงเทพ...' required)
+          .valid-feedback 
+          .invalid-feedback กรุณากรอกที่อยู่ตามทะเบียนบ้าน
+            .invalid-feedback__desc
+        .col-12.form-row.px-0
+          label.form__label(for='validate-address') ที่อยู่ปัจจุบัน
+          input.form-control#validate-address(type='text' placeholder='123 ถ.รัชดาภิเษก ดินแดง กรุงเทพ...' required)
+          .invalid-feedback กรุณากรอกที่อยู่ปัจจุบัน
+            .invalid-feedback__desc
+        .col-12.form-row.px-0
+          label.form__label(for='validate-job') อาชีพ
+          select.custom-select.form-control#validate-job(required)
+            option 
+            option พนักงานบริษัทที่มีอิสระภาพทางการเงิน 
+            option พนักงานบริษัทที่มีไลฟ์สไตล์หรูหราแต่เรียบง่าย 
+            option พนักงานบริษัทที่หน้าตาดีและมีตังเยอะ 
+          .valid-feedback 
+          .invalid-feedback กรุณาเลือกอาชีพ
+            .invalid-feedback__desc     
+        .col-12.form-row.px-0
+          label.form__label(for='validate-jobaddress') สถานที่ทำงาน
+          input.form-control#validate-jobaddress(type='text' placeholder='ชื่อบริษัท, จังหวัด' required)
+          .valid-feedback 
+          .invalid-feedback  กรุณากรอกที่อยู่ที่ทำงาน
+            .invalid-feedback__desc
+        .col-12.px-0
+          a(href='page-7.html')
+            button.btn.next.mb-4.btn-secondary#check-invalid(type='submit' disabled) อนุญาตดำเนินการ    
