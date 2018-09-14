@@ -8,38 +8,40 @@
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-    <header class="border-bottom"><img class="img-fluid d-block mx-auto w-50 py-1" src="images/logoTruemoney.png" alt=""/></header>
-    <section class="auth">
-      <div class="container">
-        <h1 class="auth__title">สมัครทรูมันนี่ วอลเล็ท</h1>
-        <h3 class="auth__subtitle">กรุณากรอกข้อมูลเพื่อสมัครใช้งาน</h3>
-      </div>
-    </section>
-    <form class="form needs-validation" action="page-3.html" method="" novalidate="novalidate">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <label class="form__label" for="validate-email">อีเมล</label>
-            <input class="form-control" id="validate-email" type="email" value="" placeholder="name@email.com" required="required"/>
-            <div class="valid-feedback"> </div>
-            <div class="invalid-feedback">กรุณากรอกอีเมล
-              <div class="invalid-feedback__desc"></div>
+    <div class="oauth">
+      <header class="border-bottom"><img class="img-fluid d-block mx-auto w-50 py-1" src="images/logoTruemoney.png" alt=""/></header>
+      <section class="auth">
+        <div class="container">
+          <h1 class="auth__title">สมัครทรูมันนี่ วอลเล็ท</h1>
+          <h3 class="auth__subtitle">กรุณากรอกข้อมูลเพื่อสมัครใช้งาน</h3>
+        </div>
+      </section>
+      <form class="form needs-validation" action="page-3.html" method="" novalidate="novalidate">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <label class="form__label" for="validate-email">อีเมล</label>
+              <input class="form-control" id="validate-email" type="email" value="" placeholder="name@email.com" required="required"/>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">กรุณากรอกอีเมล
+                <div class="invalid-feedback__desc"></div>
+              </div>
             </div>
-          </div>
-          <div class="col-12 form-row">
-            <label class="form__label" for="validate-id">รหัสผ่าน</label>
-            <input class="form-control" id="validate-pass" type="password" value="" placeholder="กรอกรหัสผ่านความยาว 8-16 ตัวอักษร" pattern=".{8,}" required="required"/>
-            <div class="valid-feedback"></div>
-            <div class="invalid-feedback">กรุณากรอกรหัสผ่านมากกว่า8ตัวอักษรขึ้นไป
-              <div class="invalid-feedback__desc"></div>
+            <div class="col-12 form-row">
+              <label class="form__label" for="validate-id">รหัสผ่าน</label>
+              <input class="form-control" id="validate-pass" type="password" value="" placeholder="กรอกรหัสผ่านความยาว 8-16 ตัวอักษร" pattern=".{8,}" required="required"/>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">กรุณากรอกรหัสผ่านมากกว่า8ตัวอักษรขึ้นไป
+                <div class="invalid-feedback__desc"></div>
+              </div>
             </div>
-          </div>
-          <div class="col-12">
-            <button class="btn next btn-secondary" id="check-invalid" type="submit" disabled="disabled">ถัดไป</button>
+            <div class="col-12">
+              <button class="btn next btn-secondary" id="check-invalid" type="submit" disabled="disabled">ถัดไป</button>
+            </div>
           </div>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
     <script src="main.js"></script>
     <script>
       var formatPhone = new Cleave('#validate-tel', {

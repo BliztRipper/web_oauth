@@ -1,26 +1,27 @@
 extends _template
 block body
   -var page = 'validate-1'
-  header.border-bottom
-    img(src="images/logoTruemoney.png", alt="").img-fluid.d-block.mx-auto.w-50.py-1
-  section.auth
-    .container
-      h1.auth__title สมัครทรูมันนี่ วอลเล็ท
-      h3.auth__subtitle กรุณากรอกข้อมูลเพื่อสมัครใช้งาน
-  form.form.needs-validation(action='page-2.2.html' method='' novalidate)
-    .container
-      .row
-        .col-12
-          label.form__label(for='validate-tel') เบอร์โทรศัพท์
-          input.form-control#validate-tel(type='tel' value='' onkeypress="return isNumberKey(event)" placeholder='099-999-9999' pattern=".{12}" required)
-          .valid-feedback 
-          .invalid-feedback กรุณากรอกเบอร์โทรศัพท์ 10 หลัก
-            .invalid-feedback__desc
-        .col-12.form-row
-          label.form__label(for='validate-id') เลขที่ประจำตัวบัตรประชาชน
-          input.form-control#validate-id(type='tel' value='' onkeypress="return isNumberKey(event)" placeholder='9-999-9999-9999-9' pattern=".{17}" required)
-          .valid-feedback
-          .invalid-feedback กรุณากรอกเลขบัตรประชาชน 13 หลัก
-            .invalid-feedback__desc
-        .col-12
-          button.btn.next.btn-secondary#check-invalid(type='submit' disabled) ถัดไป
+  .oauth
+    header.border-bottom
+      img(src="images/logoTruemoney.png", alt="").img-fluid.d-block.mx-auto.w-50.py-1
+    section.auth
+      .container
+        h1.auth__title สมัครทรูมันนี่ วอลเล็ท
+        h3.auth__subtitle กรุณากรอกข้อมูลเพื่อสมัครใช้งาน
+    form.form.needs-validation(action='page-2.2.html' method='' novalidate)
+      .container
+        .row
+          .col-12
+            label.form__label(for='validate-tel') เบอร์โทรศัพท์
+            input.form-control#validate-tel(type='tel' value='' onkeypress="return isNumberKey(event)" placeholder='099-999-9999' pattern=".{12}" required)
+            .valid-feedback
+            .invalid-feedback กรุณากรอกเบอร์โทรศัพท์ 10 หลัก
+              .invalid-feedback__desc
+          .col-12.form-row
+            label.form__label(for='validate-id') เลขที่ประจำตัวบัตรประชาชน
+            input.form-control#validate-id(type='tel' value='' onkeypress="return isNumberKey(event)" placeholder='9-999-9999-9999-9' pattern=".{17}" required)
+            .valid-feedback
+            .invalid-feedback กรุณากรอกเลขบัตรประชาชน 13 หลัก
+              .invalid-feedback__desc
+          .col-12
+            button.btn.next.btn-secondary#check-invalid(type='submit' disabled) ถัดไป

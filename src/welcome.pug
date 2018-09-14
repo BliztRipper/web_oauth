@@ -1,21 +1,24 @@
 extends _template
 block body
-  header.border-bottom
-    img(src="images/logoTruemoney.png", alt="").img-fluid.d-block.mx-auto.w-50.py-1
-  section.auth
-    .container
-      h1.auth__title สวัสดี
-      h1.auth__title คุณกิตติศักดิ์ สิงหากันยา
-  section.welcome
-    .container
-      .row.welcome__row
-        .col-12.pb-3
-          h5.welcome__title บัญชีทรูมันนี่ วอลเล็ทของคุณ
-        .col-6
-          label.welcome__label เบอร์โทรศัพท์
-        .col-6
-          span 091-234-5555  
-        .col-6
-          label.welcome__label ยอดเงินคงเหลือ
-        .col-6
-          span 546.29 ฿  
+  .oauth
+    header.border-bottom
+      img(src="images/logoTruemoney.png", alt="").img-fluid.d-block.mx-auto.w-50.py-1
+    section.auth
+      .container
+        h1.auth__title สวัสดี
+        h1.auth__title คุณกิตติศักดิ์ สิงหากันยา
+    section.welcome
+      .container
+        .row.welcome__row
+          .col-12.pb-3
+            h5.welcome__title บัญชีทรูมันนี่ วอลเล็ทของคุณ
+          .col-6
+            label.welcome__label เบอร์โทรศัพท์
+          .col-6
+            span 091-234-5555
+          .col-6
+            label.welcome__label ยอดเงินคงเหลือ
+          .col-6
+            span 546.29 ฿
+    .fixed-bottom.text-center.mb-3(style='font-size:14px')
+      a(href='') ดูวิธีเติมเงินทรูมันนี่ วอลเล็ท

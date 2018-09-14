@@ -8,44 +8,46 @@
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-    <header class="border-bottom"><img class="img-fluid d-block mx-auto w-50 py-1" src="images/logoTruemoney.png" alt=""/></header>
-    <section>
-      <div class="container">
-        <p class="consent__header py-4">อนุญาตให้เข้าถึงข้อมูลเพื่อเชื่อมบัญชี ดังนี้  </p>
-        <div class="row">
-          <div class="col-12 py-3 border-consent">
-            <div class="consent__title">ชื่อ-นามสกุล</div>
-            <div class="consent__input">สมหญิง ใจดี</div>
+    <div class="oauth">
+      <header class="border-bottom"><img class="img-fluid d-block mx-auto w-50 py-1" src="images/logoTruemoney.png" alt=""/></header>
+      <section>
+        <div class="container">
+          <p class="consent__header py-4">อนุญาตให้เข้าถึงข้อมูลเพื่อเชื่อมบัญชี ดังนี้</p>
+          <div class="row">
+            <div class="col-12 py-3 border-consent">
+              <div class="consent__title">ชื่อ-นามสกุล</div>
+              <div class="consent__input">สมหญิง ใจดี</div>
+            </div>
+            <div class="col-12 py-3 border-consent">
+              <div class="consent__title">เบอร์โทรศัพท์</div>
+              <div class="consent__input">099-999-9999</div>
+            </div>
+            <div class="col-12 d-flex justify-content-between align-items-center py-3 border-consent consent-container">
+              <label class="consent__label">อีเมล</label>
+              <input type="checkbox" checked="checked"/>
+              <div class="checkmark"></div>
+            </div>
+            <div class="col-12 d-flex justify-content-between align-items-center py-3 border-consent consent-container">
+              <label class="consent__label">หักเงินในบัญชีทรูมันนี่ วอลเล็ท</label>
+              <input type="checkbox"/>
+              <div class="checkmark"></div>
+            </div>
+            <div class="col-12 d-flex justify-content-between align-items-center py-3 border-consent consent-container">
+              <label class="consent__label">เติมเงินด้วยบาร์โค้ด</label>
+              <input type="checkbox"/>
+              <div class="checkmark"></div>
+            </div>
+            <div class="col-12 d-flex justify-content-between align-items-center py-3 border-consent consent-container">
+              <label class="consent__label">ชำระเงินด้วยบาร์โค้ด</label>
+              <input type="checkbox"/>
+              <div class="checkmark"></div>
+            </div>
+            <div class="col-12"><a href="page-6.html">
+                <button class="btn next mb-4" type="submit">อนุญาตดำเนินการ</button></a></div>
           </div>
-          <div class="col-12 py-3 border-consent">
-            <div class="consent__title">เบอร์โทรศัพท์</div>
-            <div class="consent__input">099-999-9999</div>
-          </div>
-          <div class="col-12 d-flex justify-content-between align-items-center py-3 border-consent consent-container">
-            <label class="consent__label">อีเมล</label>
-            <input type="checkbox" checked="checked"/>
-            <div class="checkmark"></div>
-          </div>
-          <div class="col-12 d-flex justify-content-between align-items-center py-3 border-consent consent-container">
-            <label class="consent__label">หักเงินในบัญชีทรูมันนี่ วอลเล็ท</label>
-            <input type="checkbox"/>
-            <div class="checkmark"></div>
-          </div>
-          <div class="col-12 d-flex justify-content-between align-items-center py-3 border-consent consent-container">
-            <label class="consent__label">เติมเงินด้วยบาร์โค้ด</label>
-            <input type="checkbox"/>
-            <div class="checkmark"></div>
-          </div>
-          <div class="col-12 d-flex justify-content-between align-items-center py-3 border-consent consent-container">
-            <label class="consent__label">ชำระเงินด้วยบาร์โค้ด</label>
-            <input type="checkbox"/>
-            <div class="checkmark"></div>
-          </div>
-          <div class="col-12"><a href="page-6.html">
-              <button class="btn next mb-4" type="submit">อนุญาตดำเนินการ</button></a></div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <script src="main.js"></script>
     <script></script>
   </body>

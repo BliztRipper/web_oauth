@@ -8,27 +8,29 @@
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-    <header class="border-bottom"><img class="img-fluid d-block mx-auto w-50 py-1" src="images/logoTruemoney.png" alt=""/></header>
-    <div class="comfirm-otp d-flex justify-content-around align-items-center py-4 border">
-      <div class="comfirm-otp__desc">รหัสยืนยันจะถูกส่ง SMS ไปที่เบอร์</div>
-      <div class="comfirm-otp__num">099-999-9999</div>
-    </div>
-    <div class="container" style="width: 280px;"> 
-      <form class="needs-validation" action="page-4.html" method="" novalidate="novalidate">
-        <div class="otp d-flex justify-content-center justify-content-around" action="">
-          <input type="tel" maxlenght="1" autofocus="autofocus" required="required"/>
-          <input type="tel" maxlenght="1" required="required"/>
-          <input type="tel" maxlenght="1" required="required"/>
-          <input type="tel" maxlenght="1" required="required"/>
-          <input type="tel" maxlenght="1" required="required"/>
-          <input type="tel" maxlenght="1" required="required"/>
-        </div>
-        <div class="otp__ref">Ref รหัสยืนยัน: HUTV </div>
-        <button class="otp__reset mx-auto d-block" type="reset">ขอรหัสยืนยันอีกครั้ง</button>
-        <div class="col-12">
-          <button class="btn next btn-secondary" id="check-invalid" type="submit" disabled="disabled">ถัดไป  </button>
-        </div>
-      </form>
+    <div class="oauth">
+      <header class="border-bottom"><img class="img-fluid d-block mx-auto w-50 py-1" src="images/logoTruemoney.png" alt=""/></header>
+      <div class="comfirm-otp d-flex justify-content-around align-items-center py-4 border">
+        <div class="comfirm-otp__desc">รหัสยืนยันจะถูกส่ง SMS ไปที่เบอร์</div>
+        <div class="comfirm-otp__num">099-999-9999</div>
+      </div>
+      <div class="container" style="width: 280px;">
+        <form class="needs-validation" action="page-4.html" method="" novalidate="novalidate">
+          <div class="otp d-flex justify-content-center justify-content-around" action="">
+            <input type="tel" maxlenght="1" autofocus="autofocus" required="required"/>
+            <input type="tel" maxlenght="1" required="required"/>
+            <input type="tel" maxlenght="1" required="required"/>
+            <input type="tel" maxlenght="1" required="required"/>
+            <input type="tel" maxlenght="1" required="required"/>
+            <input type="tel" maxlenght="1" required="required"/>
+          </div>
+          <div class="otp__ref">Ref รหัสยืนยัน: HUTV</div>
+          <button class="otp__reset mx-auto d-block" type="reset">ขอรหัสยืนยันอีกครั้ง</button>
+          <div class="col-12">
+            <button class="btn next btn-secondary" id="check-invalid" type="submit" disabled="disabled">ถัดไป</button>
+          </div>
+        </form>
+      </div>
     </div>
     <script src="main.js"></script>
     <script></script>

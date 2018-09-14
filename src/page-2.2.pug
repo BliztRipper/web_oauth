@@ -1,26 +1,27 @@
 extends _template
 block body
   -var page = 'validate-1'
-  header.border-bottom
-    img(src="images/logoTruemoney.png", alt="").img-fluid.d-block.mx-auto.w-50.py-1
-  section.auth
-    .container
-      h1.auth__title สมัครทรูมันนี่ วอลเล็ท
-      h3.auth__subtitle กรุณากรอกข้อมูลเพื่อสมัครใช้งาน
-  form.form.needs-validation(action='page-3.html' method='' novalidate)
-    .container
-      .row
-        .col-12
-          label.form__label(for='validate-email') อีเมล
-          input.form-control#validate-email(type='email' value='' placeholder='name@email.com' required)
-          .valid-feedback 
-          .invalid-feedback กรุณากรอกอีเมล
-            .invalid-feedback__desc
-        .col-12.form-row
-          label.form__label(for='validate-id') รหัสผ่าน
-          input.form-control#validate-pass(type='password' value='' placeholder='กรอกรหัสผ่านความยาว 8-16 ตัวอักษร' pattern=".{8,}" required)
-          .valid-feedback
-          .invalid-feedback กรุณากรอกรหัสผ่านมากกว่า8ตัวอักษรขึ้นไป
-            .invalid-feedback__desc
-        .col-12
-          button.btn.next.btn-secondary#check-invalid(type='submit' disabled) ถัดไป
+  .oauth
+    header.border-bottom
+      img(src="images/logoTruemoney.png", alt="").img-fluid.d-block.mx-auto.w-50.py-1
+    section.auth
+      .container
+        h1.auth__title สมัครทรูมันนี่ วอลเล็ท
+        h3.auth__subtitle กรุณากรอกข้อมูลเพื่อสมัครใช้งาน
+    form.form.needs-validation(action='page-3.html' method='' novalidate)
+      .container
+        .row
+          .col-12
+            label.form__label(for='validate-email') อีเมล
+            input.form-control#validate-email(type='email' value='' placeholder='name@email.com' required)
+            .valid-feedback
+            .invalid-feedback กรุณากรอกอีเมล
+              .invalid-feedback__desc
+          .col-12.form-row
+            label.form__label(for='validate-id') รหัสผ่าน
+            input.form-control#validate-pass(type='password' value='' placeholder='กรอกรหัสผ่านความยาว 8-16 ตัวอักษร' pattern=".{8,}" required)
+            .valid-feedback
+            .invalid-feedback กรุณากรอกรหัสผ่านมากกว่า8ตัวอักษรขึ้นไป
+              .invalid-feedback__desc
+          .col-12
+            button.btn.next.btn-secondary#check-invalid(type='submit' disabled) ถัดไป
