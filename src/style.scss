@@ -321,6 +321,11 @@
     &__label{
       color:#999999;
       font-size: 0.875rem;
+      white-space: nowrap;
+    }
+    &__number {
+      font-size: 0.875rem;
+      white-space: nowrap;
     }
   }
 
@@ -367,6 +372,11 @@
         justify-content: center;
         width: 100%;
         margin: 1.5rem 0;
+      }
+    }
+    .col-6{
+      @media(max-width:300px){
+        padding-left: 0;
       }
     }
   }
